@@ -1,11 +1,15 @@
-import {Header} from "./componentes";
+import {Header, Conteudo, Footer} from "./componentes";
 import './App.css'
 
 const App = () => {
   return (
     <>
-        <h1>Hello World!</h1>
-        <Header />
+        <Header nomeUsuario={"Juca"}/>
+        <Conteudo>
+            <h1>Titulo</h1>
+            <p>Lorem ipsum</p>
+        </Conteudo>
+        <Footer criador={"Brentano"}/>
     </>
   )
 }
