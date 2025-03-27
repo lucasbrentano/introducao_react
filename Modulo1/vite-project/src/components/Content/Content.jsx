@@ -1,6 +1,6 @@
-import style from './Conteudo.module.css';
+import style from './Content.module.css';
 
-const Conteudo = (props) => {
+const Content = (props) => {
     const {children} = props;
 
     return (
@@ -10,4 +10,4 @@ const Conteudo = (props) => {
     )
 };
 
-export {Conteudo};
+export {Content};

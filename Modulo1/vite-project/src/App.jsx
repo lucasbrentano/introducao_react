@@ -1,14 +1,14 @@
-import {Header, Conteudo, Footer} from "./componentes";
+import {Header, Content, Footer} from "./components";
 import './App.css'
+import {HomePage} from "./pages";
 
 const App = () => {
   return (
     <>
         <Header nomeUsuario={"Juca"}/>
-        <Conteudo>
-            <h1>Titulo</h1>
-            <p>Lorem ipsum</p>
-        </Conteudo>
+        <Content>
+            <HomePage/>
+        </Content>
         <Footer criador={"Brentano"}/>
     </>
   )
