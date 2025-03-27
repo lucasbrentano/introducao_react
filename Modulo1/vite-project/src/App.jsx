@@ -1,16 +1,12 @@
-import {Header, Content, Footer} from "./components";
+import {BrowserRouter} from "react-router-dom";
 import './App.css'
-import {HomePage} from "./pages";
+import {Router} from "./Router.jsx";
 
 const App = () => {
   return (
-    <>
-        <Header nomeUsuario={"Juca"}/>
-        <Content>
-            <HomePage/>
-        </Content>
-        <Footer criador={"Brentano"}/>
-    </>
+    <BrowserRouter>
+        <Router />
+    </BrowserRouter>
   )
 }
 
