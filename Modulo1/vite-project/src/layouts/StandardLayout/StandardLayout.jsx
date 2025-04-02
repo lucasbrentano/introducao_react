@@ -1,14 +1,17 @@
 import {Content, Footer, Header} from "../../components";
 import {Outlet} from "react-router-dom";
+import {useAppContext} from "../../hooks";
 
 const StandardLayout = () => {
+    const { creator } = useAppContext();
+
     return (
         <>
-            <Header nomeUsuario={"Juca"}/>
+            <Header userName={"Juca"}/>
             <Content>
                 <Outlet />
             </Content>
-            <Footer criador={"Brentano"}/>
+            <Footer creator={creator}/>
         </>
     );
 };
